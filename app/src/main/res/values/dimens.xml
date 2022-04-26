@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="pad16">16dp</dimen>
+    <dimen name="pad18">18dp</dimen>
+    <dimen name="pad0">0dp</dimen>
+    <dimen name="pad7">7dp</dimen>
+    <dimen name="pad12">12dp</dimen>
+    <dimen name="pad14">14dp</dimen>
+    <dimen name="pad10">10dp</dimen>
+    <dimen name="pad20">20dp</dimen>
+    <dimen name="pad22">22dp</dimen>
+    <dimen name="pad8">8dp</dimen>
+    <dimen name="pad21">21dp</dimen>
+    <dimen name="pad1">1dp</dimen>
+    <dimen name="pad9">9dp</dimen>
+    <dimen name="pad24">24dp</dimen>
+</resources>

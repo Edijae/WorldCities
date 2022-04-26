@@ -1,0 +1,126 @@
+{
+  "project_info": {
+    "project_number": "365077307028",
+    "project_id": "spu-project-ab5c5",
+    "storage_bucket": "spu-project-ab5c5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365077307028:android:4f39e90e3d095676759e81",
+        "android_client_info": {
+          "package_name": "com.hypertrack.ridesharing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "365077307028-p5oeg7lt484g8shoj1mpa1tmhptvb7pd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCy-4GltiSq-RA0Sz6Pz7KaRnhMgtMmZk8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "365077307028-p5oeg7lt484g8shoj1mpa1tmhptvb7pd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365077307028:android:bac92cb35ddcca88759e81",
+        "android_client_info": {
+          "package_name": "com.hypertrack.ridesharing.driver.android.github"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "365077307028-p5oeg7lt484g8shoj1mpa1tmhptvb7pd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCy-4GltiSq-RA0Sz6Pz7KaRnhMgtMmZk8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "365077307028-p5oeg7lt484g8shoj1mpa1tmhptvb7pd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365077307028:android:9b36f5e984b4e1d9759e81",
+        "android_client_info": {
+          "package_name": "com.hypertrack.ridesharing.rider.android.github"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "365077307028-p5oeg7lt484g8shoj1mpa1tmhptvb7pd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCy-4GltiSq-RA0Sz6Pz7KaRnhMgtMmZk8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "365077307028-p5oeg7lt484g8shoj1mpa1tmhptvb7pd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365077307028:android:a0f056c98f009564759e81",
+        "android_client_info": {
+          "package_name": "com.samuel.worldcities"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "365077307028-p5oeg7lt484g8shoj1mpa1tmhptvb7pd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCy-4GltiSq-RA0Sz6Pz7KaRnhMgtMmZk8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "365077307028-p5oeg7lt484g8shoj1mpa1tmhptvb7pd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

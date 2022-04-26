@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">WorldCities</string>
+    <string name="city_name">%s (%s)</string>
+    <string name="search">Search</string>
+    <string name="no_cities">No cities found matching the given search criteria</string>
+</resources>

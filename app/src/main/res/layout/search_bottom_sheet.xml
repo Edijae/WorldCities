@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/searchContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/bottom_sheet_bg"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        app:behavior_peekHeight="80dp"
+        app:layout_behavior="@string/bottom_sheet_behavior"
+        app:layout_insetEdge="bottom">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/topContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pad18"
+            android:paddingStart="@dimen/pad16"
+            android:paddingEnd="@dimen/pad16"
+            android:paddingBottom="@dimen/pad18">
+
+            <RelativeLayout
+                android:id="@+id/search_bar"
+                android:layout_width="@dimen/pad0"
+                android:layout_height="38dp"
+                android:layout_marginEnd="@dimen/pad7"
+                android:layout_toStartOf="@id/frame_layout"
+                android:background="@drawable/search_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/pad14"
+                android:paddingEnd="@dimen/pad10"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/frame_layout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ProgressBar
+                    android:id="@+id/searchPB"
+                    android:layout_width="@dimen/pad20"
+                    android:layout_height="@dimen/pad20"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_search_black_24dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/searchIV"
+                    android:layout_width="@dimen/pad20"
+                    android:layout_height="@dimen/pad20"
+                    android:layout_alignStart="@id/searchPB"
+                    android:layout_alignTop="@id/searchPB"
+                    android:layout_alignEnd="@id/searchPB"
+                    android:layout_alignBottom="@id/searchPB"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_search_black_24dp" />
+
+                <EditText
+                    android:id="@+id/searchEdt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/pad22"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/pad8"
+                    android:layout_toStartOf="@id/clearIV"
+                    android:layout_toEndOf="@id/searchIV"
+                    android:background="@null"
+                    android:clickable="false"
+                    android:ellipsize="end"
+                    android:hint="@string/search"
+                    android:imeOptions="actionSearch"
+                    android:singleLine="true"
+                    android:textColor="@color/gray_600"
+                    android:textColorHint="@color/gray_600"
+                    android:textSize="17sp" />
+
+                <ImageButton
+                    android:id="@+id/clearIV"
+                    android:layout_width="@dimen/pad21"
+                    android:layout_height="@dimen/pad21"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/pad8"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_cancel_black_24dp"
+                    android:visibility="invisible"
+                    app:tint="@color/gray_300" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/frame_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:paddingStart="@dimen/pad1"
+                android:paddingTop="@dimen/pad1"
+                android:paddingEnd="@dimen/pad1"
+                android:paddingBottom="@dimen/pad1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <Button
+                    android:id="@+id/cancel_button"
+                    style="@style/Search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="Cancel"
+                    android:textAllCaps="false"
+                    android:textColor="@color/teal_500"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <RadioGroup
+                    android:id="@+id/mapTypRadioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:background="@drawable/toggle_map"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/pad2"
+                    android:paddingEnd="@dimen/pad2">
+
+                    <com.samuel.worldcities.utilities.RadioButtonCenter
+                        android:id="@+id/mapViewRadioButton"
+                        android:layout_width="42dp"
+                        android:layout_height="34dp"
+                        android:background="@drawable/search_toggle_bg"
+                        android:button="@drawable/map_view"
+                        android:checked="true" />
+
+                    <com.samuel.worldcities.utilities.RadioButtonCenter
+                        android:id="@+id/listViewRadioButton"
+                        android:layout_width="42dp"
+                        android:layout_height="34dp"
+                        android:background="@drawable/search_toggle_bg"
+                        android:button="@drawable/list_view"
+                        android:gravity="center" />
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:id="@+id/btnTapInterceptor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    tools:visibility="gone" />
+            </RelativeLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/topContent"
+            android:layout_marginStart="@dimen/pad16"
+            android:layout_marginEnd="@dimen/pad16"
+            android:paddingBottom="@dimen/pad2"
+            tools:listitem="@layout/city_item" />
+
+        <TextView
+            android:id="@+id/infoTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@id/recyclerView"
+            android:layout_alignBottom="@id/recyclerView"
+            android:layout_margin="@dimen/pad16"
+            android:gravity="center"
+            android:text="No cities found matching the search criteria"
+            android:textColor="@color/gray_700"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</layout>

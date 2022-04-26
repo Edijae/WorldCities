@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <import type="com.samuel.worldcities.models.Country" />
+
+        <variable
+            name="city"
+            type="com.samuel.worldcities.models.City" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/city_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/Search"
+            android:layout_marginTop="@dimen/pad9"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingTop="@dimen/pad0"
+            android:paddingBottom="@dimen/pad0"
+            android:text="@{@string/city_name(city.getLocalName())}"
+            tools:text="Salt lake city (salt)" />
+
+        <TextView
+            android:id="@+id/secondary_text"
+            style="@style/Search"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/pad9"
+            android:text="@{city.country.name}"
+            android:textSize="14sp"
+            tools:text="USA" />
+
+    </LinearLayout>
+</layout>
