@@ -15,10 +15,6 @@ class CitiesRepository @Inject constructor(
 
     private var config = PagingConfig(pageSize = 15, initialLoadSize = 15)
 
-    companion object {
-        private val COUNTRY = "country"
-    }
-
     @OptIn(ExperimentalPagingApi::class)
     fun getCities(name: String?, newData: Boolean): Pager<Int, City> {
         return Pager(
