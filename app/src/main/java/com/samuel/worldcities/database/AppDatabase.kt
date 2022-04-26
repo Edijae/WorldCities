@@ -9,7 +9,7 @@ import com.samuel.worldcities.database.daos.RemoteKeyDao
 import com.samuel.worldcities.models.City
 import com.samuel.worldcities.models.RemoteKey
 
-@Database(entities = [City::class, RemoteKey::class], version = 2)
+@Database(entities = [City::class, RemoteKey::class], version = 1)
 abstract class AppDatabase : RoomDatabase() {
 
     companion object {
