@@ -25,7 +25,7 @@
             android:maxLines="1"
             android:paddingTop="@dimen/pad0"
             android:paddingBottom="@dimen/pad0"
-            android:text="@{@string/city_name(city.getLocalName())}"
+            android:text="@{@string/city_name(city.name,city.getLocalName())}"
             tools:text="Salt lake city (salt)" />
 
         <TextView
